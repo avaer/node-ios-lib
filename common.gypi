@@ -63,6 +63,10 @@
         'OBJ_DIR%': '<(PRODUCT_DIR)/obj.target',
         'V8_BASE': '<(PRODUCT_DIR)/libv8_base.a',
       }],
+      ['OS== "ios"', {
+        'OBJ_DIR%': '<(PRODUCT_DIR)/obj.target',
+        'V8_BASE': '<(PRODUCT_DIR)/libv8_base.a',
+      }],
       ['openssl_fips != ""', {
         'OPENSSL_PRODUCT': '<(STATIC_LIB_PREFIX)crypto<(STATIC_LIB_SUFFIX)',
       }, {
