@@ -217,6 +217,11 @@
     [ 'OS=="sunos"', {
       'ldflags': [ '-Wl,-M,/usr/lib/ld/map.noexstk' ],
     }],
+    [ 'OS=="android" or OS=="ios"', {
+      'defines': [
+        'NODE_MOBILE',
+      ],
+    }],
 
     [ 'node_use_openssl=="true"', {
       'defines': [ 'HAVE_OPENSSL=1' ],

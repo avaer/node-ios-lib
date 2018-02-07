@@ -557,7 +557,7 @@
                 '<(SHARED_INTERMEDIATE_DIR)/node_dtrace_provider.o'
               ],
             }],
-            [ 'OS!="mac" and OS!="linux"', {
+            [ 'OS!="mac" and OS!="ios" and OS!="linux"', {
               'sources': [
                 'src/node_dtrace_ustack.cc',
                 'src/node_dtrace_provider.cc',
@@ -767,7 +767,7 @@
       'target_name': 'node_dtrace_provider',
       'type': 'none',
       'conditions': [
-        [ 'node_use_dtrace=="true" and OS!="mac" and OS!="linux"', {
+        [ 'node_use_dtrace=="true" and OS!="mac" and OS!="ios" and OS!="linux"', {
           'actions': [
             {
               'action_name': 'node_dtrace_provider_o',
@@ -802,7 +802,7 @@
       'target_name': 'node_dtrace_ustack',
       'type': 'none',
       'conditions': [
-        [ 'node_use_dtrace=="true" and OS!="mac" and OS!="linux"', {
+        [ 'node_use_dtrace=="true" and OS!="mac" and OS!="ios" and OS!="linux"', {
           'actions': [
             {
               'action_name': 'node_dtrace_ustack_constants',
@@ -1045,7 +1045,7 @@
             '<(OBJ_PATH)<(OBJ_SEPARATOR)node_dtrace.<(OBJ_SUFFIX)',
           ],
           'conditions': [
-            ['OS!="mac" and OS!="linux"', {
+            ['OS!="mac" and OS!="ios" and OS!="linux"', {
               'libraries': [
                 '<(OBJ_PATH)<(OBJ_SEPARATOR)node_dtrace_provider.<(OBJ_SUFFIX)',
                 '<(OBJ_PATH)<(OBJ_SEPARATOR)node_dtrace_ustack.<(OBJ_SUFFIX)',

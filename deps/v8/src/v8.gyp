@@ -73,6 +73,11 @@
                 'OTHER_LDFLAGS': ['-dynamiclib', '-all_load']
               },
             }],
+            ['OS=="ios"', {
+              'xcode_settings': {
+                'OTHER_LDFLAGS': ['-dynamiclib', '-all_load']
+              },
+            }],
             ['soname_version!=""', {
               'product_extension': 'so.<(soname_version)',
             }],
@@ -2119,6 +2124,16 @@
           }
         ],
         ['OS=="mac"', {
+          'sources': [
+            'base/debug/stack_trace_posix.cc',
+            'base/platform/platform-macos.cc',
+            'base/platform/platform-posix.h',
+            'base/platform/platform-posix.cc',
+            'base/platform/platform-posix-time.h',
+            'base/platform/platform-posix-time.cc',
+          ]},
+        ],
+        ['OS=="ios"', {
           'sources': [
             'base/debug/stack_trace_posix.cc',
             'base/platform/platform-macos.cc',
