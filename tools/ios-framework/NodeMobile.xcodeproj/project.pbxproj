@@ -7,24 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AD0EE3E202A701D0004997D /* libcares.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE32202A6F840004997D /* libcares.a */; };
-		0AD0EE3F202A701D0004997D /* libhttp_parser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE34202A6F840004997D /* libhttp_parser.a */; };
-		0AD0EE40202A701D0004997D /* libnghttp2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE33202A6F840004997D /* libnghttp2.a */; };
-		0AD0EE41202A701D0004997D /* libnode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE35202A6F840004997D /* libnode.a */; };
-		0AD0EE42202A701D0004997D /* libopenssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE36202A6F840004997D /* libopenssl.a */; };
-		0AD0EE43202A701D0004997D /* libuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE2F202A6F620004997D /* libuv.a */; };
-		0AD0EE44202A701D0004997D /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE37202A6F840004997D /* libzlib.a */; };
-		0AD0EE50202A701E0004997D /* libv8_libplatform.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE45202A701E0004997D /* libv8_libplatform.a */; };
-		0AD0EE51202A701E0004997D /* libicui18n.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE46202A701E0004997D /* libicui18n.a */; };
-		0AD0EE52202A701E0004997D /* libv8_nosnapshot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE47202A701E0004997D /* libv8_nosnapshot.a */; };
-		0AD0EE53202A701E0004997D /* libv8_libsampler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE48202A701E0004997D /* libv8_libsampler.a */; };
-		0AD0EE54202A701E0004997D /* libicuucx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE49202A701E0004997D /* libicuucx.a */; };
-		0AD0EE55202A701E0004997D /* libv8_init.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE4A202A701E0004997D /* libv8_init.a */; };
-		0AD0EE56202A701E0004997D /* libv8_base.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE4B202A701E0004997D /* libv8_base.a */; };
-		0AD0EE57202A701E0004997D /* libv8_libbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE4C202A701E0004997D /* libv8_libbase.a */; };
-		0AD0EE58202A701E0004997D /* libv8_initializers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE4D202A701E0004997D /* libv8_initializers.a */; };
-		0AD0EE59202A701E0004997D /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE4E202A701E0004997D /* libgtest.a */; };
-		0AD0EE5A202A701E0004997D /* libicustubdata.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE4F202A701E0004997D /* libicustubdata.a */; };
+		0ACDC392202BB26B00E533FA /* libcares.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE32202A6F840004997D /* libcares.a */; };
+		0ACDC393202BB26B00E533FA /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE4E202A701E0004997D /* libgtest.a */; };
+		0ACDC394202BB26B00E533FA /* libhttp_parser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE34202A6F840004997D /* libhttp_parser.a */; };
+		0ACDC395202BB26B00E533FA /* libnghttp2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE33202A6F840004997D /* libnghttp2.a */; };
+		0ACDC396202BB26B00E533FA /* libnode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE35202A6F840004997D /* libnode.a */; };
+		0ACDC397202BB26B00E533FA /* libopenssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE36202A6F840004997D /* libopenssl.a */; };
+		0ACDC398202BB26B00E533FA /* libuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE2F202A6F620004997D /* libuv.a */; };
+		0ACDC399202BB26B00E533FA /* libv8_base.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE4B202A701E0004997D /* libv8_base.a */; };
+		0ACDC39A202BB26B00E533FA /* libv8_init.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE4A202A701E0004997D /* libv8_init.a */; };
+		0ACDC39B202BB26B00E533FA /* libv8_initializers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE4D202A701E0004997D /* libv8_initializers.a */; };
+		0ACDC39C202BB26B00E533FA /* libv8_libbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE4C202A701E0004997D /* libv8_libbase.a */; };
+		0ACDC39D202BB26B00E533FA /* libv8_libplatform.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE45202A701E0004997D /* libv8_libplatform.a */; };
+		0ACDC39E202BB26B00E533FA /* libv8_libsampler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE48202A701E0004997D /* libv8_libsampler.a */; };
+		0ACDC39F202BB26B00E533FA /* libv8_nosnapshot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE47202A701E0004997D /* libv8_nosnapshot.a */; };
+		0ACDC3A0202BB26B00E533FA /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0EE37202A6F840004997D /* libzlib.a */; };
 		3C02AFD41FA919C30053C191 /* NodeMobile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C02AFD31FA919C30053C191 /* NodeMobile.cpp */; };
 		D9A7619D1F7C63A8006AFE86 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331917C21EC4702A00F93D52 /* CoreFoundation.framework */; };
 		D9A762281F7C675E006097B1 /* NodeMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A762261F7C674F006097B1 /* NodeMobile.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -71,24 +68,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9A7619D1F7C63A8006AFE86 /* CoreFoundation.framework in Frameworks */,
-				0AD0EE50202A701E0004997D /* libv8_libplatform.a in Frameworks */,
-				0AD0EE51202A701E0004997D /* libicui18n.a in Frameworks */,
-				0AD0EE52202A701E0004997D /* libv8_nosnapshot.a in Frameworks */,
-				0AD0EE53202A701E0004997D /* libv8_libsampler.a in Frameworks */,
-				0AD0EE54202A701E0004997D /* libicuucx.a in Frameworks */,
-				0AD0EE55202A701E0004997D /* libv8_init.a in Frameworks */,
-				0AD0EE56202A701E0004997D /* libv8_base.a in Frameworks */,
-				0AD0EE57202A701E0004997D /* libv8_libbase.a in Frameworks */,
-				0AD0EE58202A701E0004997D /* libv8_initializers.a in Frameworks */,
-				0AD0EE59202A701E0004997D /* libgtest.a in Frameworks */,
-				0AD0EE5A202A701E0004997D /* libicustubdata.a in Frameworks */,
-				0AD0EE3E202A701D0004997D /* libcares.a in Frameworks */,
-				0AD0EE3F202A701D0004997D /* libhttp_parser.a in Frameworks */,
-				0AD0EE40202A701D0004997D /* libnghttp2.a in Frameworks */,
-				0AD0EE41202A701D0004997D /* libnode.a in Frameworks */,
-				0AD0EE42202A701D0004997D /* libopenssl.a in Frameworks */,
-				0AD0EE43202A701D0004997D /* libuv.a in Frameworks */,
-				0AD0EE44202A701D0004997D /* libzlib.a in Frameworks */,
+				0ACDC392202BB26B00E533FA /* libcares.a in Frameworks */,
+				0ACDC393202BB26B00E533FA /* libgtest.a in Frameworks */,
+				0ACDC394202BB26B00E533FA /* libhttp_parser.a in Frameworks */,
+				0ACDC395202BB26B00E533FA /* libnghttp2.a in Frameworks */,
+				0ACDC396202BB26B00E533FA /* libnode.a in Frameworks */,
+				0ACDC397202BB26B00E533FA /* libopenssl.a in Frameworks */,
+				0ACDC398202BB26B00E533FA /* libuv.a in Frameworks */,
+				0ACDC399202BB26B00E533FA /* libv8_base.a in Frameworks */,
+				0ACDC39A202BB26B00E533FA /* libv8_init.a in Frameworks */,
+				0ACDC39B202BB26B00E533FA /* libv8_initializers.a in Frameworks */,
+				0ACDC39C202BB26B00E533FA /* libv8_libbase.a in Frameworks */,
+				0ACDC39D202BB26B00E533FA /* libv8_libplatform.a in Frameworks */,
+				0ACDC39E202BB26B00E533FA /* libv8_libsampler.a in Frameworks */,
+				0ACDC39F202BB26B00E533FA /* libv8_nosnapshot.a in Frameworks */,
+				0ACDC3A0202BB26B00E533FA /* libzlib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
