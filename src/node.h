@@ -63,6 +63,7 @@
 #include "v8.h"  // NOLINT(build/include_order)
 #include "v8-platform.h"  // NOLINT(build/include_order)
 #include "node_version.h"  // NODE_MODULE_VERSION
+#include "uv.h"
 
 #define NODE_MAKE_VERSION(major, minor, patch)                                \
   ((major) * 0x1000 + (minor) * 0x100 + (patch))
@@ -214,6 +215,27 @@ NODE_EXTERN void Init(int* argc,
 
 class IsolateData;
 class Environment;
+
+class NodeService {
+  public:
+
+  v8::Isolate *isolate;
+  Environment *env;
+  v8::Eternal<v8::Context> context;
+  // uv_idle_t idle;
+  uv_timer_t timer;
+
+  NODE_EXTERN NodeService(int argc, char** argv, void (*initEnv)(NodeService *service));
+  NODE_EXTERN ~NodeService();
+  NODE_EXTERN void Scope(void (*fn)());
+  // NODE_EXTERN void Queue(void (*fn)());
+  NODE_EXTERN bool Tick(unsigned int timeout);
+  // NODE_EXTERN void Loop();
+
+  NODE_EXTERN v8::Isolate *GetIsolate();
+  NODE_EXTERN Environment *GetEnvironment();
+  NODE_EXTERN v8::Local<v8::Context> GetContext();
+};
 
 class MultiIsolatePlatform : public v8::Platform {
  public:
