@@ -4,7 +4,7 @@ LIBRARY_PATH='out/Release'
 TARGET_LIBRARY_PATH='tools/ios-framework/bin/arm64'
 NODELIB_PROJECT_PATH='tools/ios-framework'
 
-./configure --dest-os=ios --dest-cpu=arm64 --openssl-no-asm --with-intl=none --without-snapshot
+./configure --dest-os=ios --dest-cpu=arm64 --openssl-no-asm --without-intl --without-snapshot
 make -j2
 
 rm -Rf $TARGET_LIBRARY_PATH
