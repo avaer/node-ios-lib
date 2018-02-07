@@ -125,3 +125,4 @@ deps/uv/docs/src/guide/
 /out_ios
 /tools/ios-framework/bin
 .DS_Store
+xcuserdata
